@@ -1,3 +1,19 @@
+# A projekt egy helyi kis pályázatra készül. Lehetnének jobb megoldások az adat kezelést illetően, de nem érzem szükségességét. A project gyakorlás céljából készült leginkább. A fálj struktúrák változhatnak
+### Az oldal tartalmaz pár oldalt ami egy selection menüvel mutatja be a hires személyeket, vagy nevezetességeket.
+
+Todo:
+- Embereket, helyeket gyüjteni(Név, leírás, kép)
+- Nevezetességek page
+- Animáció jobbá tétele
+- Footer design
+
+A projekt dependencyket letölteni:
+```bash
+npm i
+```
+
+---Innentől automatikus react --- 
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
