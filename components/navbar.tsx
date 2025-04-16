@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Link from 'next/link'
+import { Button } from "@/components/ui/button";  
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);  
 
@@ -13,7 +14,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-neutral-400">A környék</span>
+          <span className="self-center text-3xl md:text-[2rem] font-bold whitespace-nowrap text-neutral-300">Kemenesalja</span>
         </a>
         <button
           type="button"
@@ -45,22 +46,22 @@ export default function Navbar() {
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 text-neutral-300 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-                <Link href={"/"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300">Főoldal</Link>
+                <Link href={"/"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300">Főoldal</Link>
             </li>
             <li>
-            <Link href={"/kornyek"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300">Környék bemutatása</Link>
+            <Link href={"/kornyek"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300">Kemenesalja bemutatása</Link>
             </li>
             <li>
-            <Link href={"/hiresek"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300"> Híres személyek</Link>
+            <Link href={"/hiresek"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Híres személyek</Link>
 
      
             </li>
-            <li>
+            {/* <li>
           
-            <Link href="{}" className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300"> Helyi nevezetéssegek</Link>
+            <Link href="{}" className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Helyi nevezetéssegek</Link>
 
  
-            </li>
+            </li> */}
             {/* <li>
               <a href="#" className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300">Contact</a>
             </li> */}

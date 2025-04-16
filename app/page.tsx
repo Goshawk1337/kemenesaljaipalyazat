@@ -12,11 +12,10 @@ export default function Home() {
           <div className="text-neutral-300 text-center   ">
             <h1 className="font-bold md:text-[2.5rem]  text-2xl">Üdv a honlapon!</h1>
             <div className="text-center">
-              <p className="font-thin md:text-[1.2rem] text-xs max-w-[400px]  text-neutral-300  mt-2 mx-auto text-justify">A honlapot olyan céllel készítettem, hogy bemutassam Kemenesalja nevezetes helyeit, és híres személyeit, mind ezt egy jól kinéző letisztult dizájn-nal megáldva. </p>
+              <p className="font-thin md:text-[1.25rem] text-xs max-w-[400px]  text-neutral-300  mt-2 mx-auto text-justify">A honlapot olyan céllel készítettem, hogy bemutassam Kemenesalja nevezetes helyeit, és híres személyeit, mind ezt egy jól kinéző letisztult dizájn-nal megáldva. </p>
               <div className="flex-row ">
-                <Link href={"/kornyek"}><Button variant={"ghost"} className="mt-5 cursor-pointer transition-all duration-500 ">A környék</Button></Link>
-                <Link href={"/hiresek"}><Button variant={"ghost"} className="mt-5 cursor-pointer transition-all duration-500 ml-3  ">A Híres személyek</Button></Link>
-                <Link href={""}><Button variant={"ghost"} className="mt-5 cursor-pointer transition-all duration-500 ml-3  ">Celldömölk nevezetességei</Button></Link>
+                <Link href={"/kornyek"}><Button variant={"ghost"} className="w-[10rem] mt-5 cursor-pointer transition-all duration-500 ">A környék</Button></Link>
+                <Link href={"/hiresek"}><Button variant={"ghost"} className="w-[10rem] mt-5 cursor-pointer transition-all duration-500 ml-3  ">A Híres személyek</Button></Link>
               </div>
             </div>
 
