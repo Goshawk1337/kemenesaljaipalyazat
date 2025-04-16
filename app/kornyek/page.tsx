@@ -1,52 +1,76 @@
 import React from "react";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
-import celldom from "@/public/celldom.jpg"
-import celljajas from "@/public/celljaras.png"
-import tortenelmi from "@/public/tortenelmiahah.jpg"
- export default function Kornyek() {
+// import celldom from "@/public/celldom.jpg"
+// import celljajas from "@/public/celljaras.png"
+// import tortenelmi from "@/public/tortenelmiahah.jpg"
+
+import {
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+} from "@/components/ui/tabs"
+import { desc, img } from "motion/react-client";
+
+const tabsData: { [key: string]: any[] } = {
+    "kemenesalja": [
+        {
+            Label: "Kemenesalja",
+            description: "Kemenesalja földrajzi tájegység Vas vármegyében, a Kemeneshát keleti oldalán, a Rába, Zala és Marcal folyók között fekvő terület.",
+            img: "/assets/kemenesalja.png",
+        },
+        {
+            Label: "Ság hegy",
+            description: "A Ság tanúhegy Vas vármegye keleti részén, a Kemenesháton.  279 méter magasan emelkedik Celldömölk fölött, és közigazgatásilag is hozzá tartozik. 1891-ben a hegy platóján végzett méréseket Eötvös Loránd a róla elnevezett torziós ingával. A hegyen a 20. században bazaltot bányásztak, ma azonban itt található a Sághegyi Tájvédelmi Körzet.",
+            img: "/assets/saghegy.jpg",
+        }
+    ],
+    "Celldömölk": [
+
+    ]
+};
+
+
+export default function Kornyek() {
     return (
         <div>
+            <Tabs defaultValue="kemenesalja" className="">
+                <TabsList>
+                    {Object.keys(tabsData).map((key, index) => (
+                        <TabsTrigger key={index} value={key}>
+                            {key}
+                        </TabsTrigger>
+                    ))}
 
-             <div className=" ">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div className="text-neutral-300">
-                         <h1 className="font-bold md:text-[2.5rem] text-2xl  inline-block">Celldömölk</h1>
-
-                         <p className="max-w-[600px] font-thin text-justify text-xs md:text-lg mt-3">
-                            Vas vármegyében, a Kemenesalján, a Ság-hegy lábánál, a Celldömölki járás székhelye. A város történelme gazdag és több évszázadra nyúlik vissza, nevét a helyi bencés apátságról kapta, amelynek központi eleme a híres Mária-kegytemplom. A templom ma is fontos zarándokhely, amely évente sok látogatót vonz.
-                        </p>
-                    </div>
-
-                     <div className="flex justify-center items-center">
-                        <Image src={celldom} width={400} className="rounded" alt="celldomolkvalamixdxdx" />
-                    </div>
-                </div>  
-                
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-                    <div className="text-neutral-300">
-                        <h1 className="font-bold md:text-[2.5rem] text-2xl  inline-block">Fekvése</h1>
-                        <p className="max-w-[600px] font-thin text-justify text-xs md:text-lg mt-3">
-                        A város a 8-as főút jánosházi leágazásától északra, a megyeszékhely Szombathelytől 42 kilométerre keletre, a Marcal-medencében fekszik.                        </p>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <Image src={celljajas} width={400} height={400} className="rounded" alt="másik kép" />
-                    </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-                    <div className="text-neutral-300">
-                        <h1 className="font-bold md:text-[2.5rem] text-2xl  inline-block">Története</h1>
-                        <p className="max-w-[600px] font-thin text-justify text-xs md:text-lg mt-3">
-                        Kiscell és Nemesdömölk 1903-ban egyesült Celldömölk néven, Alsóságot 1950-ben, Izsákfát pedig Celldömölk várossá nyilvánításakor (1978. december 31-én) csatolták Celldömölkhöz.  A mai település területén egy ötödik település, Pórdömölk is volt a középkorban, ez azonban a 20. század elején már nem volt önálló.                      </p>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <Image src={tortenelmi} width={400} height={400} className="rounded" alt="másik kép" />
-                    </div>
-                </div>
-            </div>
- 
+                </TabsList>
+                {Object.entries(tabsData).map(([key, items]) => (
+                    <TabsContent key={key} value={key} className="w-fit h-fit">
+                        {items.map((item, index) => (
+                            <div
+                                key={index}
+                                className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4 mt-10"
+                            >
+                                <div>
+                                    <h1 className="text-xl font-bold mb-2">{item.Label}</h1>
+                                    <p>{item.description}</p>
+                                </div>
+                                <div>
+                                    <Image
+                                    
+                                        src={item.img}
+                                        alt={item.Label}
+                                        width={400}
+                                        height={300}
+                                        layout="responsive"
+                                        className="lg:max-w-[25rem]  rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </TabsContent>
+                ))}
+            </Tabs>
         </div>
 
     )

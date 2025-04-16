@@ -4,12 +4,11 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import FadeIn from "./scrollfade";
+import ClientWrapper from "./leniswrapper"; // új import
 
 const figtree = Figtree({
-    variable: "--font-figtree"
-})
-
- 
+  variable: "--font-figtree"
+});
 
 export default function RootLayout({
   children,
@@ -17,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="hu">
       <body className={`${figtree.variable} antialiased bg-neutral-900 h-screen flex flex-col select-none`}>
+        <ClientWrapper /> {/* Lenis itt aktiválódik */}
         <Navbar />
 
         <main className="flex-grow flex justify-center items-start pt-24">

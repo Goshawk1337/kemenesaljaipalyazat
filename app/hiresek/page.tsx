@@ -43,9 +43,37 @@ const people: { id: string, name: string, description: string, img: string }[] =
     name: "Dukai Takách Judit",
     description: "Takách István birtokos és muzsai Vittnyédy Terézia leánya, Dukán (Vas vármegye) született, 1795. szeptember 4-én keresztelték Kissomlyón. Szülei gondos nevelésben részesítették, s mikor kora ifjúságában tanújelét adta költői tehetségének, maguk is buzdították az írásra. Amikor anyja 1811-ben meghalt, apja Sopronba vitte tanulni, hol nyelvekben, zenében, valamint a gazdasszonykodás különféle elemeiben is szép haladásra tett szert; úgy tért vissza családi lakába, hol a háztartás gondjait egészen átvette. 1814-ben Döbrentei Gábor, Wesselényi Miklóssal és nevelőjével, akik ekkor Itáliából tértek vissza, meglátogatták. Már ekkor verselgetett Malvina néven, amit később is megtartott költeményeinél. Gróf Festetics György méltónak látta az 1817-ben Keszthelyen tartott Helikon ünnepélyre meghívni. Berzsenyi Dániel is méltatta tehetségét Kazinczy Ferenchez írt levelében. 1818-ban Göndöcz Ferenc vezette oltárhoz, akivel Felsőpatyra költözött. Tizenkét évig élt első férjével, s négy gyermekük született. 1832-től második férje Patthy István ügyvéd volt. Hirtelen jött tüdővészben halt meg 1836. április 15-én, Sopronban. Duka község temetőjében nyugszik, sírhelye a Nemzeti sírkert része, a község központjában pedig áll az egykori Dukai Takách-kúria.",
     img: "/assets/dukai.jpg"
+  },
+  {
+    "id": "kresznerics",
+    "name": "Kresznerics Ferenc",
+    "description": "Kresznerics Ferenc (1770–1832) nyelvész, lexikográfus és katolikus pap, aki a magyar nyelv gazdagításán és rendszerezésén dolgozott. Legismertebb műve a 'Magyar-latin szótár', amely a magyar szókincs bővítését és a nyelv tudományos feldolgozását célozta. Munkássága jelentős hatással volt a magyar nyelv fejlődésére, és hozzájárult a nyelvújítási mozgalomhoz. Kresznerics Ferenc életét a tudományos kutatás és a nyelv iránti elkötelezettség jellemezte. (Róla nem találtam semmilyen Portrét.)",
+    "img": "/assets/kresznerics.jpg"
+  },
+  {
+    "id": "gazdag",
+    "name": "Gazdag Erzsi",
+    "description": "Gazdag Erzsi (1912–1987) költőnő, aki gyermekverseivel vált ismertté és szeretetté a magyar irodalomban. Művei játékosak, ritmusosak, és gyakran tanító jellegűek, amelyek a gyermekek nyelvi fejlődését segítik. Versei számos gyermekantológiában és tankönyvben szerepelnek, hozzájárulva a magyar gyermekirodalom gazdagításához. Gazdag Erzsi munkássága a gyermekek világának mély megértéséről tanúskodik.",
+    "img": "/assets/gazdag.jpg"
+  },
+  {
+    "id": "majthenyi",
+    "name": "Majthényi László",
+    "description": "Majthényi László (1814–1886) költő, író és újságíró, aki a 19. századi magyar irodalom jelentős alakja volt. Műveiben gyakran foglalkozott társadalmi kérdésekkel, és elkötelezett volt a nemzeti értékek mellett. Írásai hozzájárultak a magyar irodalom fejlődéséhez, és hatással voltak kortársaira. Majthényi László munkássága a magyar irodalom sokszínűségét és gazdagságát tükrözi.",
+    "img": "/assets/majthenyi.png"
+  },
+  {
+    "id": "soltis",
+    "name": "Soltis Lajos",
+    "description": "Soltis Lajos (1942–2006) színész és rendező, aki a magyar színházi élet meghatározó alakja volt. Munkássága során számos emlékezetes előadást hozott létre, és hozzájárult a színházi kultúra gazdagításához. Nevéhez fűződik a Soltis Lajos Színház megalapítása, amely a magyar színházi élet fontos intézménye. Soltis Lajos művészete a közönség és a szakma elismerését egyaránt kivívta.",
+    "img": "/assets/soltis.jpg"
+  },
+  {
+    "id": "zongor",
+    "name": "Zongor Ferenc",
+    "description": "Zongor Ferenc (1915–1999) helytörténész és pedagógus, aki jelentős munkát végzett Kemenesalja történetének feltárásában és dokumentálásában. Kutatásai hozzájárultak a régió múltjának megismeréséhez, és fontos forrásokat biztosítottak a helyi történelem iránt érdeklődők számára. Pedagógusként is kiemelkedő szerepet játszott, generációkat nevelt a történelem és a helyi értékek tiszteletére.",
+    "img": "/assets/zongor.jpg"
   }
-
-
 ]
 export default function Hiresek() {
   const [selected, setSelected] = useState(people[0].id)
@@ -99,7 +127,7 @@ export default function Hiresek() {
                       <p className=" text-justify text-neutral-300 max-w-[600px] mt-1">{person.description}</p>
                     </div>
                     <div className="mt-5">
-                      <Image className="rounded-lg md:h-[20rem] md:w-[40rem]" src={person.img} width={10} height={20} layout="responsive" alt={person.name} title={person.name}></Image>
+                      <Image className="rounded-lg max-w-lg" src={person.img} width={10} height={20} layout="responsive" alt={person.name} title={person.name}></Image>
                     </div>
                   </div>
                 ))}
