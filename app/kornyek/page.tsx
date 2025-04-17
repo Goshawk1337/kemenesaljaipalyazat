@@ -17,7 +17,7 @@ const tabsData: { [key: string]: any[] } = {
     "kemenesalja": [
         {
             Label: "Kemenesalja",
-            description: "Kemenesalja földrajzi tájegység Vas vármegyében, a Kemeneshát keleti oldalán, a Rába, Zala és Marcal folyók között fekvő terület. Területe 90–100 km², tengerszint feletti átlagos magassága 110-140 méter. Legmagasabb pontjai a 291 méter magasságú Ság hegy (291 méter) és a 235 m-es Kis-Somlyó. Nyugatról a Kemeneshát, keletről a Marcal völgye, délről pedig részben a Kemeneshát, részben a Zalai-dombvidék határolja, nyugat és délnyugat felé a Kemenesalja a Kemeneshátban folytatódik, északról a Rába határolja. Az éves átlagos csapadékmennyiség 633 milliméter. A legcsapadékosabb hónap a július a 74,4 milliméteres átlagával, csapadékban legszegényebb hónapja a január 37,2 milliméteres átlagával.",
+            description: "Kemenesalja földrajzi tájegység Vas vármegyében, a Kemeneshát keleti oldalán, a Rába, Zala és Marcal folyók között fekvő terület. Területe 90–100 km², tengerszint feletti átlagos magassága 110-140 méter. Legmagasabb pontjai a 291 méter magasságú Ság hegy  és a 235 m-es Kis-Somlyó. Nyugatról a Kemeneshát, keletről a Marcal völgye, délről pedig részben a Kemeneshát, részben a Zalai-dombvidék határolja, nyugat és délnyugat felé a Kemenesalja a Kemeneshátban folytatódik, északról a Rába határolja. Az éves átlagos csapadékmennyiség 633 milliméter. A legcsapadékosabb hónap a július a 74,4 milliméteres átlagával, csapadékban legszegényebb hónapja a január 37,2 milliméteres átlagával.",
             img: "/assets/kemenesalja/kemenesalja.png",
         },
         {

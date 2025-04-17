@@ -20,7 +20,7 @@ export default function RootLayout({
         <Navbar />
 
         <main className="flex-grow flex justify-center items-start pt-24">
-          <div className="w-[70vw]">
+          <div className="w-[75vw]">
             <FadeIn>{children}</FadeIn>
           </div>
         </main>
