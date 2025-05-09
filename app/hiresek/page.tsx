@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "motion/react"
+
 import {
   Select,
   SelectContent,
@@ -10,8 +12,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import Footer from "@/components/footer";
-import { div } from "motion/react-client";
+import FadeIn from "../scrollfade";
+
 
 const people: { id: string, name: string, description: string, img: string, wiki: string }[] = [
   {
@@ -92,7 +94,21 @@ const people: { id: string, name: string, description: string, img: string, wiki
     "img": "/assets/emberek/zongor.jpg",
     "wiki": "https://www.cellbibl.hu/index.php/10-lexikon/370-zongor-ferenc"
 
-  }
+  },
+  {
+    "id": "nagylaszlo",
+    "name": "Nagy László ",
+    "description": "A Veszprém vármegyei Felsőiszkázon született. Édesapja, Nagy Béla (1889–1969), elismert gazdaként különböző tisztségeket töltött be, bíró is volt. Festőnek készült. Édesanyja, Vas Erzsébet (1905–1995), nyárádi születésű gazdalány. A szülők 1923-ban kötöttek házasságot, s négy gyermekük született: Izabella, Mária, László és István. Testvérei közül István Kossuth- és József Attila-díjas költővé vált Ágh István néven.",
+    "img": "/assets/emberek/nagylaszlo.jpg",
+    "wiki": "https://hu.wikipedia.org/wiki/Nagy_L%C3%A1szl%C3%B3_(k%C3%B6lt%C5%91)"
+  },
+  {
+    "id": "weoressandor",
+    "name": "Weöres Sándor",
+    "description": "Apja, id. Weöres Sándor hivatásos katona, huszártiszt, földbirtokos volt; anyja, Blaskovich Mária nagyszebeni, gazdag, részben szerb származású polgárcsaládból származott. Két testvére volt, Anna és István. Tanulmányait a pápai evangélikus elemi iskolában kezdte meg, majd a csöngei evangélikus elemiben folytatta (1919–23). Csöngén azonban rossz egészségi állapota miatt hamarosan magántanuló lett, az iskolát így végezte el. 1924-ben beiratkozott a szombathelyi Faludi Ferenc Reálgimnáziumba. Ekkoriban Pável Ágoston kosztos diákja volt, s vele a későbbiekben is fennmaradt fiúi jó viszonya.",
+    "img": "/assets/emberek/weoressandor.jpg",
+    "wiki": "https://hu.wikipedia.org/wiki/We%C3%B6res_S%C3%A1ndor"
+  },
 ]
 export default function Hiresek() {
   const [selected, setSelected] = useState(people[0].id)
@@ -102,17 +118,17 @@ export default function Hiresek() {
     <div>
       <div className="mt-24 w-full">
         <div className="flex flex-row space-x-4">
-          <h1 className="md:text-[2.5rem] text-2xl font-bold text-neutral-300">
+          <h1 className="md:text-[2.5rem] text-2xl font-bold text-neutral-100">
             Válassz ki egy híres személyt! <br />
-            <p className="text-neutral-300 text-xs md:text-[1.2rem] font-thin">
+            <p className="text-neutral-100 text-xs md:text-[1.2rem] font-thin">
               Tudd meg a történetét, és hogy hogyan nézett ki!
             </p>
           </h1>
 
         </div>
         <div className="mt-10">
-          <Select onValueChange={setSelected} >
-            <SelectTrigger className="text-neutral-300 cursor-pointer"   >
+          <Select onValueChange={setSelected}  >
+            <SelectTrigger className="text-neutral-100 cursor-pointer"  >
               <SelectValue placeholder="Válassz egy személyt" />
             </SelectTrigger>
             <SelectContent className=" " >
@@ -130,30 +146,26 @@ export default function Hiresek() {
         <div>
 
           <div  >
-            {/* {people.filter(person => person.id === selected).map(person => (
-              <div>
-
-              </div>
-
-            ))} */}
             <div>
               {people
                 .filter(person => person.id === selected)
                 .map(person => (
-                  <div key={person.id} className="grid grid-cols-1 md:grid-cols-2 gap-x-3">
-                    <div>
-                      <a href={person.wiki} target="_blank  ">
-                        <h1 className="text-neutral-300 md:text-[2.5rem] text-2xl  font-bold no-underline hover:underline hover:text-neutral-500 transition-all duration-300 inline-block">{person.name}</h1>
-                      </a>
-                      <p className=" text-justify text-neutral-300 max-w-[600px] mt-1">{person.description}</p>
+                  <FadeIn>
+
+                    <div key={person.id} className="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                      <div>
+                        <a href={person.wiki} target="_blank  ">
+                          <h1 className="text-neutral-100 md:text-[2.5rem] text-2xl  font-bold no-underline hover:underline hover:text-neutral-400 transition-all duration-300 inline-block">{person.name}</h1>
+                        </a>
+                        <p className=" text-justify text-neutral-100 max-w-[600px] mt-1">{person.description}</p>
+                      </div>
+                      <div className="mt-5">
+                        <Image className="rounded-lg max-w-lg" src={person.img} width={10} height={20} layout="responsive" alt={person.name} title={person.name}></Image>
+                      </div>
                     </div>
-                    <div className="mt-5">
-                      <Image className="rounded-lg max-w-lg" src={person.img} width={10} height={20} layout="responsive" alt={person.name} title={person.name}></Image>
-                    </div>
-                  </div>
+                  </FadeIn>
                 ))}
             </div>
-
           </div>
         </div>
       </div>

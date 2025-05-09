@@ -11,10 +11,10 @@ export default function Navbar() {
 
   return (
     <nav className=" ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="w-[75vw] flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
-          <span className="self-center text-3xl md:text-[2rem] font-bold whitespace-nowrap text-neutral-300">Kemenesalja</span>
+          <span className="self-center text-3xl md:text-[2rem] font-bold whitespace-nowrap text-neutral-100">Kemenesalja</span>
         </a>
         <button
           type="button"
@@ -44,26 +44,26 @@ export default function Navbar() {
           className={`${ isOpen ? "block" : "hidden" } w-full md:block md:w-auto`}  
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 text-neutral-300 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 text-neutral-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-                <Link href={"/"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300">Főoldal</Link>
+                <Link href={"/"} className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300">Főoldal</Link>
             </li>
             <li>
-            <Link href={"/kornyek"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300">Kemenesalja bemutatása</Link>
+            <Link href={"/kornyek"} className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300">Kemenesalja bemutatása</Link>
             </li>
             <li>
-            <Link href={"/hiresek"} className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Híres személyek</Link>
+            <Link href={"/hiresek"} className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Híres személyek</Link>
 
      
             </li>
             {/* <li>
           
-            <Link href="{}" className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Helyi nevezetéssegek</Link>
+            <Link href="{}" className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Helyi nevezetéssegek</Link>
 
  
             </li> */}
             {/* <li>
-              <a href="#" className="block py-2 px-3 text-neutral-300 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300">Contact</a>
+              <a href="#" className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-700 md:p-0 transition-all duration-300">Contact</a>
             </li> */}
           </ul>
         </div>

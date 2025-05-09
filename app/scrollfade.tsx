@@ -10,9 +10,9 @@ export default function FadeIn({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       key={pathname} 
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: -20, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, ease: 'easeOut' }}
+      transition={{ duration: 1, ease: 'easeOut' }}
     >
       {children}
     </motion.div>
