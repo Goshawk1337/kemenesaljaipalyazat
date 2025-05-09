@@ -7,8 +7,10 @@ import FadeIn from "./scrollfade";
 import ClientWrapper from "./leniswrapper"; // új import
 
 const figtree = Figtree({
-  variable: "--font-figtree"
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-figtree',
 });
+
 
 export default function RootLayout({
   children,
