@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <div className="w-[64.583vw] mx-auto">
+    <div className="w-[75vw] mx-auto">
       <footer className="text-white py-4 mx-auto">
         <div className="flex flex-row max-w-screen-xl mt-16 gap-x-6">
           <p>

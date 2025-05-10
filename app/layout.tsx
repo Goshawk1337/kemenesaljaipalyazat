@@ -17,13 +17,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="hu">
-      <body className={`${figtree.variable} antialiased bg-[#000314] h-screen flex flex-col select-none  `}>
+      <body className={`${figtree.variable} antialiased bg-[#020929] h-screen flex flex-col select-none  `}>
         <ClientWrapper /> {/* Lenis itt aktiválódik */}
         <Navbar />
 
         <>
           {/* Fix blur háttér – mindig az oldal alján */}
-          <div className="fixed bottom-0 left-0 w-full  h-24 md:h-96 bg-blue-800  blur-3xl md:blur-[20rem] opacity-10 z-0 pointer-events-none " />
+          <div className="fixed bottom-0 left-0 w-full  h-64 md:h-96 bg-blue-500  blur-3xl md:blur-[20rem] opacity-10 z-0 pointer-events-none " />
 
           {/* Fő tartalom */}
           <main className="relative z-10 flex-grow flex justify-center items-start pt-24">
