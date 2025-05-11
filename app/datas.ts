@@ -101,7 +101,7 @@ const tabsData: { [key: string]: { Label: string, description: string, img: stri
         {
             "Label": "Gotthárd-Felsőbüki Nagy-kastély",
             "description": "A kastélyt Felsőbüki Nagy Sándor építtette barokk stílusban. Jelenleg üresen áll, legutóbb általános iskola működött. Bárdosi János muzeológus 1965-ben írt a kastélyról: „A faluban található a Felsőbüki Nagyok (előtte: a herényi Gotthárdok) kétszintes, teljes egészében alápincézett úrilaka, amelyet a falu kastélynak nevez. Ma körzeti általános iskola működik az épületben, Berzsenyiről elnevezve. Maga a klasszicizáló épület meglehetősen jellegtelen. Régebbi, alacsonyabb szárnya épült a Gotthárdok idején, az újabb, magasabb traktust a Felsőbüki Nagyok illesztették hozzá. A kastély az uradalmi birtokközpont szerepét töltötte be. A Felsőbüki Nagyok uradalma volt a község területének több mint kétharmada (kétezer-háromszáz katasztrális holdból közel ezerhatszáz tartozott az uradalomhoz.)",
-            "img": "/assets/egyhazasetye/berzsenyi.jpg"
+            "img": "/assets/egyhazasetye/felsobuk.jpg"
         }
     ],
     "Kemenessömjén": [
