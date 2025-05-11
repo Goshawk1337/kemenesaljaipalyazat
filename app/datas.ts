@@ -108,39 +108,39 @@ const tabsData: { [key: string]: { Label: string, description: string, img: stri
         {
             "Label": "A katolikus templom",
             "description": "Mint a legtöbb magyar faluban, Kemenessömjénben is a legrégebbi épület a templom. Keletkezésének pontos dátumát nem ismerjük. A Kisboldogasszonynak szentelt templom első írásos említése 1339-ből való. Száz év múlva, 1439. augusztus 8.-án így szól róla a forrás: IV. Jenő pápa Firenzében Osth László kérvényére a semjéni Szűz Mária tiszteletére épült templom hívei számára búcsút engedélyezett. Feltehető, hogy plébániatemplom volt a reformációig, és Mihályfa is hozzátartozott. 1550-ben még katolikus plébánia, de a reformáció során az evangélikusok kapták meg. Ebben az időben szinte az egész Kemenesalja, így Sömjén is az új hitre tért át. Az ezt követő időkben a templom pusztulásnak indult, és csaknem 150 éven keresztül romlott az állaga, mígnem egy 1698-ban keltezett leírás már csak falak omladékát, romos sekrestyét és a templom körüli elhanyagolt temetőt említi.",
-            "img": "assets/kemenessomjen/templom2.jpg",
+            "img": "/assets/kemenessomjen/templom2.jpg",
         },
                 {
             "Label": "Az evangélikus templom",
             "description": "A Kemenessömjénben élő - egyébként máig túlsúlyban lévő - evangélikus lakosságnak sokáig nem volt saját temploma. Egykoron a katolikus templomot használták, majd ennek erőszakos visszafoglalása után Dömölkre jártak a hívek hitüket gyakorolni. A templom története szorosan összefonódik az iskola sorsával. Így történetünk az 1852-es évben kezdődik, amikor a sömjéni gyülekezet iskola és tanítói lakás céljára egy zsúpfedeles jobbágyházat vásárolt Ajkay Jánostól. Az épületen 2 szoba lévén, egyiket átadták a tanítónak lakásul, a másikat iskolának használták.",
-            "img": "assets/kemenessomjen/evtemplom.jpg",
+            "img": "/assets/kemenessomjen/evtemplom.jpg",
         },
                 {
             "Label": "A Berzsenyi-kastély",
             "description": "Községünk talán legszebb ékessége a képen látható kastély. A Berzsenyi-család ősei a XV. századig vezethetők vissza. Az ősök a veszprém megyei Nagy-Börzsöny-pusztára kaptak királyi adományt. Innen származik a nemesi előnevük: egyházasberzsenyi. Berzsenyi Jenő orvosdoktor 1845-ben Nemesmagasiban született, Vas vármegye tiszti főorvosa volt. Élénken részt vett a társadalmi, megyei és országos ügyekben. 1905-10-ig a celldömölki kerület országgyűlési képviselője volt. A kastélyt Moravetz Zsigmond tervei alapján ő építtette 1904-05-ben, szecessiós stílusban. Az épület gazdag homlokzati ornamentikával, kovácsoltvas ablakrácsokkal, korlátokkal díszített.",
-            "img": "assets/kemenessomjen/bkastely10.jpg",
+            "img": "/assets/kemenessomjen/bkastely10.jpg",
         }
     ],
     "Csönge" : [
         {
             "Label": "Evangélikus templom",
             "description": "A barokk stílusú templom 1784-ben épült. A fagerendás mennyezetű épület belsejében három oldalon faoszlopok által tartott karzat látható. A karzat orgona felőli részén található az a pad, amelynek egyik latin nyelvű belevésett szövegét Petőfi Sándornak tulajdonítanak: 'Spes confisa Deo nunguam confusa recedit', vagyis: 'Az Istenbe vetett reménység sohasem szégyenít meg.' A költő 1839. májusától három hónapot töltött a szomszédos Ostffyasszonyfán Salkovics Péter földmérnök házában. A 16 éves ifjú szerelemre gyúlt a csöngei nyugalmazott huszárőrnagy, Csáfordy Tóth Ferenc Róza nevű leánya iránt. A hagyomány szerint a szerelmes költő innen nézte az istentiszteletek alatt Rózát, akihez verseket is írt. A helyiség dísze a szószékoltár, amelyen szépen kivitelezett az utolsó vacsorát ábrázoló olajkép. Előtte vörös kőből faragott keresztelőmedence áll.",
-            "img": "assets/csonge/csongetemp.jpg"
+            "img": "/assets/csonge/csongetemp.jpg"
         },
         {
             "Label": "Jézus Szíve iskolakápolna (Katolikus templom)",
             "description": "A római katolikus iskolakápolna 1929-ben épült. Két harangja van. A kisebbik 54 cm átmérőjű, 92 kg-os, Seltenhofer Frigyes Fiai Harangöntő Gyárában öntötték Sopronban. Közadakozásból készült el 1924-ben. A nagyobbik harang 65 cm átmérőjű, 160 kg-os, szintén soproni öntésű, és szintén közadakozásból készült el 1930-ban.",
-            "img": "assets/csonge/ktemplom.jpg"
+            "img": "/assets/csonge/ktemplom.jpg"
         },
         {
             "Label": "Weöres Sándor - Károlyi Amy Emlékház",
             "description": "A település legnagyobb fiának, a gyermekkorát itt töltő Weöres Sándornak állít emléket a szépen felújított szülői házban berendezett állandó kiállítás. A költő halálának évében (1989) átadott első emlékszoba nemrégiben újjászületett, s 2006-ban nyerte el jelenlegi formáját. A ma már a költő házaspár életművét bemutató, európai színvonalú Weöres Sándor - Károlyi Amy Emlékház a hagyatékból származó bútorok, könyvek, fényképfelvételek, kéziratok, relikviák segítségével idézi meg a két költő emlékét.",
-            "img": "assets/csonge/emlekhaz.jpg"
+            "img": "/assets/csonge/emlekhaz.jpg"
         },
                 {
             "Label": "Tessedik-akác",
             "description": "A falu történelmének élő hírnöke a legendás, több, mint 200 éves Tessedik-akác, mely az evangélikus templom udvarán áll. Magyarország egyik első akácfája ez, melyet Tessedik Sámuel ültetett a XVIII. században. Ez a fa adta a Cser egykori őshonos erdőit felváltó akácosok szaporítóanyagát. Koronája alatt Petőfi Sándor, Kisfaludy Károly, Tatay Sándor és Pável Ágoston is megfordult.",
-            "img": "assets/csonge/akac.jpg"
+            "img": "/assets/csonge/akac.jpg"
         }
     ]
 };
