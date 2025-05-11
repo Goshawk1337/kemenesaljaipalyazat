@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import { getHiresek } from "../hiresek/page"
-import { getTelepulesek } from "../kornyek/page"
+import { getHiresek } from "../datas"
+import { getTelepulesek } from "../datas"
 import { object } from "motion/react-client"
 export default function Leiras() {
     const famous = getHiresek()
