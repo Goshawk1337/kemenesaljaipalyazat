@@ -110,13 +110,17 @@ const people: { id: string, name: string, description: string, img: string, wiki
     "wiki": "https://hu.wikipedia.org/wiki/We%C3%B6res_S%C3%A1ndor"
   },
 ]
+
+export function getHiresek() {
+  return people
+}
 export default function Hiresek() {
   const [selected, setSelected] = useState(people[0].id)
 
 
   return (
     <div>
-      <div className="mt-24 w-full">
+      <div className="  w-full">
         <div className="flex flex-row space-x-4">
           <h1 className="md:text-[2.5rem] text-2xl font-bold text-neutral-100">
             Válassz ki egy híres személyt! <br />

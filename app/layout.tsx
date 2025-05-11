@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="hu">
       <body className={`${figtree.variable} antialiased bg-[#020929] h-screen flex flex-col select-none  `}>
-        <ClientWrapper /> {/* Lenis itt aktiválódik */}
-        <Navbar />
+         <Navbar />
 
         <>
           {/* Fix blur háttér – mindig az oldal alján */}
@@ -27,7 +26,7 @@ export default function RootLayout({
 
           {/* Fő tartalom */}
           <main className="relative z-10 flex-grow flex justify-center items-start pt-24">
-            <div className="w-[75vw]">
+            <div className="w-[75vw]   ">
               <FadeIn>{children}</FadeIn>
             </div>
           </main>

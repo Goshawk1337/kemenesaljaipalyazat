@@ -76,7 +76,7 @@ const tabsData: { [key: string]: { Label: string, description: string, img: stri
         {
             "Label": "Geist - Magyar Őstermelő Rt. kúriája",
             "description": "(Kolozsvári u. 72.) Erdődy Sándor gróf, a falu földesura itteni birtokai nagyobb részét a 20. század elején a Geist családnak adta el, akik szombathelyi fakereskedők és gyárosok voltak. A Geist család 1913-ban 'szergényi' előnévvel nemesi címet kapott. A kúriát Geist Lajos építtette fel 1907-08-ban eklektikus stílusban. Halála után fia, Geist Jenő lett a birtok tulajdonosa, aki 1927-től kormányfőtanácsosi címet viselt, illetve hét évig a szombathelyi izraelita hitközség elnöki posztját töltötte be. Az I. világháború után a birtokot és a kúriát a Geist család eladta a Magyar Őstermelők Részvénytársaságának. Tőlük sajátították ki 1945-ben az épületet, melyben tanácsi kirendeltséget és orvosi rendelőt helyeztek el. Napjainkban polgármesteri hivatal, orvosi rendelő és óvoda működik az épületben.",
-            "img": "assets/szergeny/ostermelo.jpg"
+            "img": "/assets/szergeny/ostermelo.jpg"
         }
     ],
     "Pápoc": [
@@ -166,7 +166,9 @@ const tabsData: { [key: string]: { Label: string, description: string, img: stri
     ]
 };
 
-
+export function getTelepulesek() {
+  return tabsData
+}
 export default function Kornyek() {
     const [selectedKey, setSelectedKey] = useState("Kemenesalja-[Tájegység]")
     const selected = tabsData[selectedKey]

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
  
-      <div className=" mt-24">
+      <div className="  ">
         <div className="grid-cols-1 w-full mx-auto">
           <div className="text-neutral-100 text-center   ">
             <h1 className="font-bold md:text-[2.5rem]  text-2xl">Üdv a honlapon!</h1>

@@ -56,6 +56,11 @@ export default function Navbar() {
 
      
             </li>
+                        <li>
+            <Link href={"/leiras"} className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Projekt bemutatása</Link>
+
+     
+            </li>
             {/* <li>
           
             <Link href="{}" className="block py-2 px-3 text-neutral-100 rounded-sm md:bg-transparent hover:text-neutral-400 md:p-0 transition-all duration-300"> Helyi nevezetéssegek</Link>
